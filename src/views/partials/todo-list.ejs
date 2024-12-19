@@ -1,0 +1,18 @@
+<% todos.forEach(todo => { %>
+    <div class="todo-item <%= todo.isDone ? 'todo-done' : '' %>" data-id="<%= todo.id %>">
+      <input 
+        type="checkbox" 
+        <%= todo.isDone ? 'checked' : '' %> 
+        onchange="toggleTodo('<%= todo.id %>')"
+      >
+      <div class="todo-content">
+        <h3><%= todo.name %></h3>
+        <p><%= todo.description %></p>
+        <span class="todo-date"><%= todo.date.toLocaleString() %></span>
+      </div>
+      <div class="todo-actions">
+        <button onclick="editTodo('<%= todo.id %>')">Edit</button>
+        <button onclick="deleteTodo('<%= todo.id %>')">Delete</button>
+      </div>
+    </div>
+  <% }) %>
