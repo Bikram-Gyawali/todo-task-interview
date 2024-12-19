@@ -10,7 +10,7 @@ It consist of features like creating todos,updating,filtering , deleting etc
 - create .env file at root folder and add the details from template (.env.example)
 - `npm run build && npm run start`
 
-
+# OR directly visit here to test the implementations : https://todo-task-interview.onrender.com/todos
 
 ## Base URL
 ```
