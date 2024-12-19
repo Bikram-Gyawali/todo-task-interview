@@ -3,7 +3,7 @@ import methodOverride from "method-override";
 import { todoRoutes } from "./routes/todo.route";
 import connectDB from "./config/db";
 import dotenv from "dotenv";
-import { errorHandler, notFoundHandler } from "./middleware/errorhandler.middleware";
+import { errorHandler, notFoundHandler } from "./middleware/errorHandler.middleware";
 
 const app = express();
 
