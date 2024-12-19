@@ -3,6 +3,12 @@
 ## Overview of the service
 It consist of features like creating todos,updating,filtering , deleting etc
 
+## SETUP PROJECT
+1.`git clone`
+2.`npm install`
+3. create .env file at root folder and add the details from template (.env.example)
+3.`npm run build && npm run start`
+
 ## Base URL
 ```
 http://localhost:3000/todos
